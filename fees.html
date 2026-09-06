@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fees &mdash; AcademyPro</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content">
+      <header class="topbar" id="topbar"></header>
+
+      <main class="page-body">
+        <section class="card profile-header-card" style="margin-bottom:24px;">
+          <div class="who">
+            <span class="avatar-lg" id="headAvatar"></span>
+            <div>
+              <h2 id="headName"></h2>
+              <div class="sub" id="headId"></div>
+            </div>
+          </div>
+          <div class="status-label">
+            FEE MANAGEMENT STATUS
+            <div id="headStatus" style="margin-top:6px;"></div>
+          </div>
+        </section>
+
+        <div class="stat-grid">
+          <div class="mini-card">
+            <div class="mini-label">MONTHLY FEE <span>&#128179;</span></div>
+            <div class="mini-value" id="monthlyFee">&mdash;</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">FEE STATUS <span>&#9989;</span></div>
+            <div id="feeStatus"></div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">REMAINING FEE <span>&#128179;</span></div>
+            <div class="mini-value" id="remainingFee">&mdash;</div>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div class="mini-card">
+            <div class="mini-label">CURRENT MONTH <span>&#128197;</span></div>
+            <div class="mini-value" id="currentMonth">&mdash;</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">PAID DATE <span>&#128197;</span></div>
+            <div class="mini-value" id="paidDate">&mdash;</div>
+          </div>
+        </div>
+
+        <section class="card">
+          <div class="table-card-head">
+            <h3>&#8635; Fee History</h3>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr><th>Month</th><th>Status</th><th>Date</th></tr>
+            </thead>
+            <tbody id="feeHistoryBody"></tbody>
+          </table>
+        </section>
+      </main>
+
+      <footer class="site-footer">&copy; 2026 AcademyPro. All rights reserved.</footer>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="notifModal"></div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/fees.js"></script>
+</body>
+</html>

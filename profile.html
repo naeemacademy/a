@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Profile &mdash; AcademyPro</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content">
+      <header class="topbar" id="topbar"></header>
+
+      <main class="page-body">
+        <section class="card" style="max-width:640px; margin:0 auto; text-align:center;">
+          <div class="avatar-lg" id="pAvatar" style="width:96px;height:96px;font-size:2rem;margin:0 auto 18px;"></div>
+          <h2 id="pName" style="font-size:1.6rem;margin-bottom:28px;"></h2>
+
+          <div class="stat-grid" style="grid-template-columns:repeat(2,1fr); text-align:left;">
+            <div class="mini-card">
+              <div class="mini-label">STUDENT ID <span>&#128188;</span></div>
+              <div class="mini-value" id="pStudentId" style="font-size:1.15rem;">&mdash;</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-label">CLASS <span>&#127891;</span></div>
+              <div class="mini-value" id="pClass" style="font-size:1.15rem;">&mdash;</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-label">GROUP <span>&#128101;</span></div>
+              <div class="mini-value" id="pGroup" style="font-size:1.15rem;">&mdash;</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-label">MONTHLY FEE <span>&#128179;</span></div>
+              <div class="mini-value" id="pFee" style="font-size:1.15rem;">&mdash;</div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">&copy; 2026 AcademyPro. All rights reserved.</footer>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="notifModal"></div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

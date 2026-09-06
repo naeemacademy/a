@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Class Tests &mdash; AcademyPro</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content">
+      <header class="topbar" id="topbar"></header>
+
+      <main class="page-body">
+        <section class="card">
+          <div class="table-card-head">
+            <h3>Class Tests</h3>
+            <select class="select-filter" id="subjectFilter"></select>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr><th>Test</th><th>Date</th><th>Obtained</th><th>Total</th><th>Percentage</th><th>Grade</th></tr>
+            </thead>
+            <tbody id="testBody"></tbody>
+          </table>
+          <div class="empty-state" id="emptyState" style="display:none;">No class tests recorded yet.</div>
+        </section>
+      </main>
+
+      <footer class="site-footer">&copy; 2026 AcademyPro. All rights reserved.</footer>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="notifModal"></div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/classtest.js"></script>
+</body>
+</html>

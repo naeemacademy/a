@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard &mdash; AcademyPro</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content">
+      <header class="topbar" id="topbar"></header>
+
+      <main class="page-body">
+        <section class="card welcome-banner">
+          <h2 id="welcomeName">Welcome</h2>
+          <p>Here's what's happening with your studies today.</p>
+        </section>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-head">MONTHLY FEE <span>&#128179;</span></div>
+            <div class="stat-value" id="statMonthlyFee">&mdash;</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-head">FEE STATUS <span>&#9989;</span></div>
+            <div id="statFeeStatus"></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-head">ATTENDANCE STATUS <span>&#9989;</span></div>
+            <div class="stat-value" id="statAttendance">&mdash;</div>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div class="exam-card">
+            <div class="exam-head">
+              <div>
+                <h3 id="ctSubject">RECENT CLASS TEST</h3>
+                <p id="ctLabel">&nbsp;</p>
+              </div>
+              <span>&#128209;</span>
+            </div>
+            <div class="exam-score" id="ctScore">&mdash;</div>
+            <div class="exam-actions" id="ctActions"></div>
+          </div>
+
+          <div class="exam-card">
+            <div class="exam-head">
+              <div>
+                <h3 id="tsSubject">RECENT TEST SESSION</h3>
+                <p id="tsLabel">&nbsp;</p>
+              </div>
+              <span>&#128203;</span>
+            </div>
+            <div class="exam-score" id="tsScore">&mdash;</div>
+            <div class="exam-actions" id="tsActions"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">&copy; 2026 AcademyPro. All rights reserved.</footer>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="notifModal"></div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

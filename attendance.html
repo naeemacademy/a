@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Attendance &mdash; AcademyPro</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content">
+      <header class="topbar" id="topbar"></header>
+
+      <main class="page-body">
+        <section class="card profile-header-card" style="margin-bottom:24px;">
+          <div class="who">
+            <span class="avatar-lg" id="headAvatar"></span>
+            <div>
+              <h2 id="headName"></h2>
+              <div class="sub" id="headId"></div>
+            </div>
+          </div>
+          <div class="status-label">
+            TODAY'S ATTENDANCE
+            <div id="headStatus" style="margin-top:6px;"></div>
+          </div>
+        </section>
+
+        <div class="stat-grid">
+          <div class="mini-card">
+            <div class="mini-label">PRESENT <span>&#9989;</span></div>
+            <div class="mini-value" id="countPresent">0</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">ABSENT <span>&#10060;</span></div>
+            <div class="mini-value" id="countAbsent">0</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">LEAVE <span>&#9888;</span></div>
+            <div class="mini-value" id="countLeave">0</div>
+          </div>
+        </div>
+
+        <section class="card">
+          <div class="cal-head">
+            <div class="cal-title">
+              <h3>Monthly Attendance</h3>
+              <div class="month-switch">
+                <button id="prevMonth" type="button" aria-label="Previous month">&#10094;</button>
+                <span id="monthLabel">&mdash;</span>
+                <button id="nextMonth" type="button" aria-label="Next month">&#10095;</button>
+              </div>
+            </div>
+            <div class="cal-legend">
+              <span><span class="legend-dot" style="background:#cdf3dc"></span>Present</span>
+              <span><span class="legend-dot" style="background:#fbd3d4"></span>Absent</span>
+              <span><span class="legend-dot" style="background:#fbe6ac"></span>Leave</span>
+              <span><span class="legend-dot" style="background:#cddaf7"></span>Holiday</span>
+              <span><span class="legend-dot" style="border:1.5px dashed #c7ccd6"></span>No Record</span>
+            </div>
+          </div>
+          <div class="cal-grid" id="calGrid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">&copy; 2026 AcademyPro. All rights reserved.</footer>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="notifModal"></div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/attendance.js"></script>
+</body>
+</html>

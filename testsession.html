@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Test Sessions &mdash; AcademyPro</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content">
+      <header class="topbar" id="topbar"></header>
+
+      <main class="page-body" id="pageBody">
+        <div class="stat-grid" id="statGrid">
+          <div class="mini-card">
+            <div class="mini-label">TOTAL OBTAINED MARKS <span>&#127942;</span></div>
+            <div class="mini-value" id="statObtained">&mdash;</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">TOTAL MARKS <span>&#128202;</span></div>
+            <div class="mini-value" id="statTotal">&mdash;</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">OVERALL GRADE <span>&#127941;</span></div>
+            <div class="mini-value" id="statGrade">&mdash;</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">PERCENTAGE <span>&#9680;</span></div>
+            <div class="mini-value" id="statPercentage">&mdash;</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">RESULT DATE <span>&#128197;</span></div>
+            <div class="mini-value" id="statDate" style="font-size:1.1rem;">&mdash;</div>
+          </div>
+        </div>
+
+        <section class="card">
+          <div class="table-card-head">
+            <h3>Test Sessions</h3>
+            <select class="select-filter" id="sessionFilter"></select>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr><th>Subject</th><th>Obtained Marks</th><th>Total Marks</th><th>Percentage</th><th>Grade</th></tr>
+            </thead>
+            <tbody id="sessionBody"></tbody>
+          </table>
+        </section>
+
+        <div class="empty-state" id="emptyState" style="display:none;">No test sessions recorded yet.</div>
+      </main>
+
+      <footer class="site-footer">&copy; 2026 AcademyPro. All rights reserved.</footer>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="notifModal"></div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/testsession.js"></script>
+</body>
+</html>

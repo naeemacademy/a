@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AcademyPro &mdash; Student Portal Login</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-page">
+
+  <div class="auth-topbar">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="AcademyPro logo" />
+      AcademyPro
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Time Table</a>
+    </nav>
+  </div>
+
+  <div class="auth-hero">
+
+    <!-- STEP 1: Academic Identity -->
+    <form class="auth-card" id="step1" novalidate>
+      <img class="auth-logo" src="assets/logo.svg" alt="Naeem Academy logo" />
+      <h1>Student Portal</h1>
+      <p class="step-label">Step 1: Academic Identity</p>
+
+      <div class="field">
+        <label for="classSelect">Class</label>
+        <select class="control" id="classSelect" required>
+          <option value="" disabled selected>Select your class year</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="groupSelect">Group</label>
+        <select class="control" id="groupSelect" required>
+          <option value="" disabled selected>Select your study group</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="rollInput">Academy Roll Number</label>
+        <input class="control" id="rollInput" type="text" inputmode="numeric" placeholder="Enter your roll number (e.g., 12)" required />
+        <div class="field-error" id="step1Error">We couldn&rsquo;t find a student matching those details.</div>
+      </div>
+
+      <button class="btn-primary" type="submit">Continue to Step 2 &rarr;</button>
+    </form>
+
+    <!-- STEP 2: Password -->
+    <form class="auth-card" id="step2" novalidate style="display:none;">
+      <span class="step-pill">Step 2 of 2</span>
+      <img class="auth-logo" src="assets/logo.svg" alt="Naeem Academy logo" />
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Please enter your password to continue.</p>
+
+      <div class="field">
+        <label>Student ID</label>
+        <div class="input-icon-wrap">
+          <span class="icon">&#128193;</span>
+          <input class="control" id="studentIdDisplay" type="text" disabled />
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-row-top">
+          <label for="passwordInput">Password</label>
+          <a href="#" id="forgotLink">Forgot Password?</a>
+        </div>
+        <div class="input-icon-wrap">
+          <span class="icon">&#128274;</span>
+          <input class="control" id="passwordInput" type="password" placeholder="Enter your password" required />
+          <button class="toggle-visibility" type="button" id="toggleVisibility" aria-label="Show password">&#128065;</button>
+        </div>
+        <div class="field-error" id="step2Error">That password doesn&rsquo;t match this Student ID.</div>
+      </div>
+
+      <button class="btn-primary" type="submit">Log In &rarr;</button>
+      <a class="auth-back" href="#" id="backToStep1">Go back to Step 1</a>
+    </form>
+
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
