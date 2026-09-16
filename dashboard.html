@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naeem Academy - Student Dashboard</title>
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <div class="page-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation"></nav>
+    <div id="notifModal" class="modal-overlay"></div>
+
+    <div class="page-content">
+      <header id="topbar" class="topbar"></header>
+
+      <main class="page-main">
+        <section class="welcome-card">
+          <h1 class="text-display-script" id="welcomeName">Welcome</h1>
+          <p class="text-muted" style="margin-top:12px;">Here's what's happening with your studies today.</p>
+        </section>
+
+        <div class="grid grid-6">
+          <div class="stat-card col-span-2">
+            <div class="stack-row-between">
+              <span class="text-label">Monthly Fee</span>
+              <span class="material-symbols-outlined stat-icon">payments</span>
+            </div>
+            <div class="stat-value" id="statMonthlyFee">&mdash;</div>
+          </div>
+
+          <div class="stat-card col-span-2">
+            <div class="stack-row-between">
+              <span class="text-label">Fee Status</span>
+              <span class="material-symbols-outlined stat-icon">check_circle</span>
+            </div>
+            <div id="statFeeStatus"></div>
+          </div>
+
+          <div class="stat-card col-span-2">
+            <div class="stack-row-between">
+              <span class="text-label">Attendance Status</span>
+              <span class="material-symbols-outlined stat-icon">check_circle</span>
+            </div>
+            <div class="stat-value" id="statAttendance">&mdash;</div>
+          </div>
+
+          <div class="exam-card col-span-3">
+            <div class="stack-row-between">
+              <div>
+                <span class="text-label">Recent Class Test</span>
+                <div class="text-muted" style="font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin-top:4px;" id="ctLabel">&nbsp;</div>
+              </div>
+              <span class="material-symbols-outlined" style="color:var(--color-primary);">quiz</span>
+            </div>
+            <div class="exam-score" id="ctScore">&mdash;</div>
+            <div class="exam-footer" id="ctActions"></div>
+          </div>
+
+          <div class="exam-card col-span-3">
+            <div class="stack-row-between">
+              <div>
+                <span class="text-label">Recent Test Session</span>
+                <div class="text-muted" style="font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin-top:4px;" id="tsLabel">&nbsp;</div>
+              </div>
+              <span class="material-symbols-outlined" style="color:#a7391e;">assignment</span>
+            </div>
+            <div class="exam-score" id="tsScore">&mdash;</div>
+            <div class="exam-footer" id="tsActions"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="table-card" style="border-radius:0; text-align:center; box-shadow:none; border-top:1px solid var(--color-line); margin-top:auto;">
+        <span class="text-label" style="text-transform:none; letter-spacing:normal;">&copy; 2026 Naeem Academy. All rights reserved.</span>
+      </footer>
+      <div class="mobile-nav-spacer"></div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

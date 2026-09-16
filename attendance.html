@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naeem Academy - Attendance</title>
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <div class="page-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation"></nav>
+    <div id="notifModal" class="modal-overlay"></div>
+
+    <div class="page-content">
+      <header id="topbar" class="topbar"></header>
+
+      <main class="page-main">
+        <section class="profile-header-card">
+          <div class="stack-row">
+            <div class="avatar-circle"><span class="material-symbols-outlined">person</span></div>
+            <div>
+              <h1 class="page-title" id="headName"></h1>
+              <p class="text-muted" id="headId" style="margin:2px 0 0;"></p>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <span class="text-label">Today's Attendance</span>
+            <div id="headStatus" style="margin-top:8px;"></div>
+          </div>
+        </section>
+
+        <div class="grid grid-3">
+          <div class="stat-card" style="flex-direction:row; align-items:center;">
+            <div class="avatar-circle" style="background:rgb(134,239,172); color:rgb(21,128,61);">
+              <span class="material-symbols-outlined">check_circle</span>
+            </div>
+            <div>
+              <div class="page-title" id="countPresent">0</div>
+              <span class="text-label">Present</span>
+            </div>
+          </div>
+          <div class="stat-card" style="flex-direction:row; align-items:center;">
+            <div class="avatar-circle" style="background:rgb(254,226,226); color:rgb(220,38,38);">
+              <span class="material-symbols-outlined">cancel</span>
+            </div>
+            <div>
+              <div class="page-title" id="countAbsent">0</div>
+              <span class="text-label">Absent</span>
+            </div>
+          </div>
+          <div class="stat-card" style="flex-direction:row; align-items:center;">
+            <div class="avatar-circle" style="background:rgb(254,243,199); color:rgb(217,119,6);">
+              <span class="material-symbols-outlined">warning</span>
+            </div>
+            <div>
+              <div class="page-title" id="countLeave">0</div>
+              <span class="text-label">Leave</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="table-card">
+          <div class="cal-header">
+            <div class="cal-title-row">
+              <h2 class="section-title">Monthly Attendance</h2>
+              <div class="month-switch">
+                <button id="prevMonth" type="button" aria-label="Previous month"><span class="material-symbols-outlined" style="font-size:18px;">chevron_left</span></button>
+                <span id="monthLabel">&mdash;</span>
+                <button id="nextMonth" type="button" aria-label="Next month"><span class="material-symbols-outlined" style="font-size:18px;">chevron_right</span></button>
+              </div>
+            </div>
+            <div class="cal-legend">
+              <span><span class="dot" style="background:#dcfce7;"></span>Present</span>
+              <span><span class="dot" style="background:#fee2e2;border:1px solid #dc2626;"></span>Absent</span>
+              <span><span class="dot" style="background:#fef3c7;border:1px solid #d97706;"></span>Leave</span>
+              <span><span class="dot" style="background:#dbeafe;border:1px solid #1d4ed8;"></span>Holiday</span>
+              <span><span class="dot" style="border:1.5px dashed var(--color-outline-light);"></span>No Record</span>
+            </div>
+          </div>
+          <div class="cal-grid" id="calGrid"></div>
+        </section>
+      </main>
+
+      <footer class="table-card" style="border-radius:0; text-align:center; box-shadow:none; border-top:1px solid var(--color-line); margin-top:auto;">
+        <span class="text-label" style="text-transform:none; letter-spacing:normal;">&copy; 2026 Naeem Academy. All rights reserved.</span>
+      </footer>
+      <div class="mobile-nav-spacer"></div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/attendance.js"></script>
+</body>
+</html>

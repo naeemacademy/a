@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naeem Academy - Home</title>
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="stylesheet" href="css/landing.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body class="public-body">
+
+<a href="#main-content" class="sr-only-focusable">Skip to main content</a>
+
+<header class="site-nav">
+  <a href="#home" class="site-brand">
+    <img src="assets/logo.jpg" alt="Naeem Academy logo" />
+    <span>Naeem Academy</span>
+  </a>
+  <button type="button" class="public-nav-toggle" id="public-nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+  <nav class="site-nav-links" id="public-nav-links">
+    <a href="#home">Home</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact Us</a>
+    <a href="student-login.html">Student Portal</a>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <section id="home" class="hero" style="background-image: url('assets/background.png');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">New Admission Open</span>
+      <h1>Unlock Your Potential at Naeem Academy</h1>
+      <p class="hero-tagline">Join a community of dedicated learners. Expert-led classes designed to help every student succeed, from 9th grade through 2nd Year Intermediate.</p>
+      <a href="#classes" class="hero-cta">Explore Classes</a>
+    </div>
+  </section>
+
+  <section id="classes" class="public-section">
+    <div class="public-section-inner">
+      <h2 class="section-heading-left">Available Classes</h2>
+      <p class="section-lede-left">Curated programs to accelerate your growth.</p>
+
+      <div class="class-grid" id="classGrid"></div>
+    </div>
+  </section>
+
+  <section id="about" class="public-section public-section-alt">
+    <div class="public-section-inner">
+      <h2>About Us</h2>
+      <p class="public-lede">
+        Naeem Academy serves students from 9th grade through 2nd Year Intermediate, offering
+        both Computer Science and Biology-track groups, with a focus on individual attention
+        and consistent academic tracking.
+      </p>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Our Mission</h3>
+          <p>To provide quality education that prepares students for higher studies and real-world success.</p>
+        </div>
+        <div class="about-card">
+          <h3>Our Classes</h3>
+          <p>9th, 10th, 1st Year, and 2nd Year — with Computer and Biology-track groups available.</p>
+        </div>
+        <div class="about-card">
+          <h3>Our Approach</h3>
+          <p>Regular attendance tracking, class tests, and term exams keep every student's progress visible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portals" class="public-section">
+    <div class="public-section-inner">
+      <h2>Quick Access</h2>
+      <p class="public-lede">Jump straight to what you need.</p>
+      <div class="quick-grid">
+        <a href="timetable.html" class="quick-card quick-card-highlight">
+          <div class="quick-card-icon"><span class="material-symbols-outlined">calendar_today</span></div>
+          <h3>Timetable</h3>
+          <p>View current class schedules.</p>
+        </a>
+        <a href="student-login.html" class="quick-card">
+          <div class="quick-card-icon"><span class="material-symbols-outlined">school</span></div>
+          <h3>Student Portal</h3>
+          <p>Access grades, attendance, and fee status.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="public-section public-section-alt">
+    <div class="public-section-inner">
+      <h2>Get in Touch</h2>
+      <p class="public-lede">We're here to help you on your educational journey.</p>
+      <div class="contact-grid">
+        <div class="contact-map">
+          Map coming soon &mdash; add your Google Maps embed URL here.
+        </div>
+        <div class="contact-details-card">
+          <div class="contact-row">
+            <span class="contact-icon"><span class="material-symbols-outlined">location_on</span></span>
+            <div>
+              <div class="contact-label">Address</div>
+              <div>Your academy address goes here<br><span class="placeholder-note">(placeholder)</span></div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon"><span class="material-symbols-outlined">call</span></span>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div>+92 000 0000000<br><span class="placeholder-note">(placeholder)</span></div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon"><span class="material-symbols-outlined">mail</span></span>
+            <div>
+              <div class="contact-label">Email</div>
+              <div>info@academypro.example<br><span class="placeholder-note">(placeholder)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-brand">
+      <img src="assets/logo.jpg" alt="Naeem Academy logo" />
+    </div>
+    <nav class="site-footer-links">
+      <a href="#home">Home</a>
+      <a href="timetable.html">Timetable</a>
+      <a href="#contact">Contact Support</a>
+      <a href="#portals">Portals</a>
+    </nav>
+  </div>
+  <p class="site-footer-copyright">&copy; 2026 Naeem Academy. All rights reserved.</p>
+</footer>
+
+<script src="js/home.js"></script>
+</body>
+</html>

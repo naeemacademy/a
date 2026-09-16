@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naeem Academy - Fees</title>
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <div class="page-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation"></nav>
+    <div id="notifModal" class="modal-overlay"></div>
+
+    <div class="page-content">
+      <header id="topbar" class="topbar"></header>
+
+      <main class="page-main">
+        <section class="profile-header-card">
+          <div class="stack-row">
+            <div class="avatar-circle"><span class="material-symbols-outlined">person</span></div>
+            <div>
+              <h1 class="page-title" id="headName"></h1>
+              <p class="text-muted" id="headId" style="margin:2px 0 0;"></p>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <span class="text-label">Fee Management Status</span>
+            <div id="headStatus" style="margin-top:8px;"></div>
+          </div>
+        </section>
+
+        <div class="grid grid-3">
+          <div class="stat-card">
+            <div class="stack-row-between">
+              <span class="text-label">Monthly Fee</span>
+              <span class="material-symbols-outlined stat-icon">payments</span>
+            </div>
+            <div class="stat-value" id="monthlyFee">&mdash;</div>
+          </div>
+          <div class="stat-card">
+            <div class="stack-row-between">
+              <span class="text-label">Fee Status</span>
+              <span class="material-symbols-outlined stat-icon">check_circle</span>
+            </div>
+            <div id="feeStatus"></div>
+          </div>
+          <div class="stat-card">
+            <div class="stack-row-between">
+              <span class="text-label">Remaining Fee</span>
+              <span class="material-symbols-outlined stat-icon">account_balance_wallet</span>
+            </div>
+            <div class="stat-value" id="remainingFee">&mdash;</div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="stat-card">
+            <div class="stack-row-between">
+              <span class="text-label">Current Month</span>
+              <span class="material-symbols-outlined stat-icon">calendar_today</span>
+            </div>
+            <div class="stat-value" style="font-size:20px;" id="currentMonth">&mdash;</div>
+          </div>
+          <div class="stat-card">
+            <div class="stack-row-between">
+              <span class="text-label">Paid Date</span>
+              <span class="material-symbols-outlined stat-icon">event_available</span>
+            </div>
+            <div class="stat-value" style="font-size:20px;" id="paidDate">&mdash;</div>
+          </div>
+        </div>
+
+        <section class="table-card">
+          <div class="stack-row" style="margin-bottom:20px;">
+            <span class="material-symbols-outlined" style="color:var(--color-primary);">history</span>
+            <h2 class="section-title">Fee History</h2>
+          </div>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead>
+                <tr><th>Month</th><th>Status</th><th>Date</th></tr>
+              </thead>
+              <tbody id="feeHistoryBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <footer class="table-card" style="border-radius:0; text-align:center; box-shadow:none; border-top:1px solid var(--color-line); margin-top:auto;">
+        <span class="text-label" style="text-transform:none; letter-spacing:normal;">&copy; 2026 Naeem Academy. All rights reserved.</span>
+      </footer>
+      <div class="mobile-nav-spacer"></div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/fees.js"></script>
+</body>
+</html>

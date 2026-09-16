@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naeem Academy - Class Tests</title>
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <div class="page-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation"></nav>
+    <div id="notifModal" class="modal-overlay"></div>
+
+    <div class="page-content">
+      <header id="topbar" class="topbar"></header>
+
+      <main class="page-main">
+        <section class="table-card">
+          <div class="stack-row-between" style="margin-bottom:24px;">
+            <h2 class="section-title">Class Tests</h2>
+            <div class="select-filter-wrap">
+              <select class="select-filter" id="subjectFilter"></select>
+              <span class="material-symbols-outlined control-chevron-right" style="font-size:18px;">expand_more</span>
+            </div>
+          </div>
+          <div class="table-scroll">
+            <table class="data-table" id="testTable">
+              <thead>
+                <tr><th>Test</th><th>Date</th><th>Obtained</th><th>Total</th><th>Percentage</th><th>Grade</th></tr>
+              </thead>
+              <tbody id="testBody"></tbody>
+            </table>
+          </div>
+          <div class="empty-state" id="emptyState" style="display:none;">No class tests recorded yet.</div>
+        </section>
+      </main>
+
+      <footer class="table-card" style="border-radius:0; text-align:center; box-shadow:none; border-top:1px solid var(--color-line); margin-top:auto;">
+        <span class="text-label" style="text-transform:none; letter-spacing:normal;">&copy; 2026 Naeem Academy. All rights reserved.</span>
+      </footer>
+      <div class="mobile-nav-spacer"></div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/classtest.js"></script>
+</body>
+</html>

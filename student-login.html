@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naeem Academy - Student Login</title>
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body class="auth-page">
+
+  <header class="auth-header">
+    <div class="brand">
+      <img alt="Naeem Academy Logo" src="assets/logo.jpg" />
+      <span>Naeem Academy</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="timetable.html">Time Table</a>
+    </nav>
+  </header>
+
+  <!-- STEP 1 -->
+  <main id="step1" class="step-panel auth-hero active">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="auth-card">
+      <div class="auth-card-head">
+        <img class="auth-logo" alt="Naeem Academy Logo" src="assets/logo.jpg" />
+        <h1>Student Portal</h1>
+        <p>Step 1: Academic Identity</p>
+      </div>
+      <form class="auth-form" id="step1Form" novalidate>
+        <div class="field auth-field">
+          <label for="class-select">Class</label>
+          <div class="control-wrap">
+            <select class="control control-pill" id="class-select" required disabled>
+              <option selected value="">Loading classes&hellip;</option>
+            </select>
+            <span class="material-symbols-outlined control-chevron-right">expand_more</span>
+          </div>
+        </div>
+        <div class="field auth-field">
+          <label for="group-select">Group</label>
+          <div class="control-wrap">
+            <select class="control control-pill" id="group-select" required disabled>
+              <option selected value="">Loading groups&hellip;</option>
+            </select>
+            <span class="material-symbols-outlined control-chevron-right">expand_more</span>
+          </div>
+        </div>
+        <div class="field auth-field">
+          <label for="roll-number">Academy Roll Number</label>
+          <input class="control control-pill" id="roll-number" placeholder="Enter your roll number (e.g., 12)" required type="number" />
+        </div>
+        <p class="field-error" id="step1Error" role="alert" style="display:none;">
+          <span class="material-symbols-outlined" style="font-size:18px;">error</span>
+          <span id="step1ErrorText">We couldn't find a student matching those details.</span>
+        </p>
+        <div class="auth-field">
+          <button class="btn btn-primary btn-block" type="submit">
+            Continue to Step 2
+            <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- STEP 2 -->
+  <main id="step2" class="step-panel auth-hero">
+    <div class="auth-card">
+      <div class="auth-card-head">
+        <span class="auth-step-pill">Step 2 of 2</span>
+        <img class="auth-logo" alt="Naeem Academy Logo" src="assets/logo.jpg" />
+        <h1>Welcome Back</h1>
+        <p>Please enter your password to continue.</p>
+      </div>
+      <form class="auth-form" id="step2Form" novalidate>
+        <div class="field auth-field">
+          <label for="student-id">Student ID</label>
+          <div class="control-wrap">
+            <span class="material-symbols-outlined control-icon-left">badge</span>
+            <input class="control" id="student-id" readonly type="text" />
+          </div>
+        </div>
+        <div class="field auth-field">
+          <div class="stack-row-between" style="margin-bottom:8px;">
+            <label for="password" style="margin-bottom:0;">Password</label>
+            <a class="link-primary" href="#" id="forgotLink">Forgot Password?</a>
+          </div>
+          <div class="control-wrap">
+            <span class="material-symbols-outlined control-icon-left">lock</span>
+            <input class="control" id="password" placeholder="Enter your password" required type="password" />
+            <button class="control-toggle-right" type="button" id="toggleVisibility" aria-label="Show password">
+              <span class="material-symbols-outlined">visibility</span>
+            </button>
+          </div>
+          <p class="field-error" id="step2Error" role="alert" style="display:none;">
+            <span class="material-symbols-outlined" style="font-size:18px;">error</span>
+            <span id="step2ErrorText">That password doesn't match this Student ID.</span>
+          </p>
+        </div>
+        <div class="auth-field" style="display:flex; flex-direction:column; gap:16px;">
+          <button class="btn btn-primary btn-block" type="submit">
+            Log In
+            <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
+          </button>
+          <a class="auth-back link-quiet" href="#" id="backToStep1">Go back to Step 1</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

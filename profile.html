@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naeem Academy - Profile</title>
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <div class="page-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation"></nav>
+    <div id="notifModal" class="modal-overlay"></div>
+
+    <div class="page-content">
+      <header id="topbar" class="topbar"></header>
+
+      <main class="page-main" style="align-items:center;">
+        <div class="table-card" style="width:100%; max-width:640px; display:flex; flex-direction:column; align-items:center; gap:var(--space-8); text-align:center;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:var(--space-4);">
+            <div class="avatar-circle lg"><span class="material-symbols-outlined">person</span></div>
+            <h1 class="section-title" id="pName"></h1>
+          </div>
+
+          <div class="grid grid-2" style="width:100%; text-align:left;">
+            <div class="info-tile">
+              <div class="icon-chip" style="background:#73f8e6; color:#00675d;">
+                <span class="material-symbols-outlined">badge</span>
+              </div>
+              <div>
+                <div class="info-label">Student ID</div>
+                <div class="info-value" id="pStudentId"></div>
+              </div>
+            </div>
+            <div class="info-tile">
+              <div class="icon-chip" style="background:var(--color-primary-soft); color:var(--color-primary);">
+                <span class="material-symbols-outlined">school</span>
+              </div>
+              <div>
+                <div class="info-label">Class</div>
+                <div class="info-value" id="pClass"></div>
+              </div>
+            </div>
+            <div class="info-tile">
+              <div class="icon-chip" style="background:#ffdad2; color:#862208;">
+                <span class="material-symbols-outlined">groups</span>
+              </div>
+              <div>
+                <div class="info-label">Group</div>
+                <div class="info-value" id="pGroup"></div>
+              </div>
+            </div>
+            <div class="info-tile">
+              <div class="icon-chip" style="background:#dcfce7; color:#15803d;">
+                <span class="material-symbols-outlined">payments</span>
+              </div>
+              <div>
+                <div class="info-label">Monthly Fee</div>
+                <div class="info-value" id="pFee"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="table-card" style="border-radius:0; text-align:center; box-shadow:none; border-top:1px solid var(--color-line); margin-top:auto;">
+        <span class="text-label" style="text-transform:none; letter-spacing:normal;">&copy; 2026 Naeem Academy. All rights reserved.</span>
+      </footer>
+      <div class="mobile-nav-spacer"></div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

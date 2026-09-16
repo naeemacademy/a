@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naeem Academy - Test Sessions</title>
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <div class="page-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation"></nav>
+    <div id="notifModal" class="modal-overlay"></div>
+
+    <div class="page-content">
+      <header id="topbar" class="topbar"></header>
+
+      <main class="page-main">
+        <div class="grid grid-3" id="statGrid">
+          <div class="stat-card" style="flex-direction:row; align-items:center;">
+            <div class="avatar-circle" style="background:#e0e7ff; color:#4f46e5;"><span class="material-symbols-outlined">trophy</span></div>
+            <div>
+              <span class="text-label">Total Obtained Marks</span>
+              <div class="page-title" id="statObtained">&mdash;</div>
+            </div>
+          </div>
+          <div class="stat-card" style="flex-direction:row; align-items:center;">
+            <div class="avatar-circle" style="background:#f3e8ff; color:#9333ea;"><span class="material-symbols-outlined">assessment</span></div>
+            <div>
+              <span class="text-label">Total Marks</span>
+              <div class="page-title" id="statTotal">&mdash;</div>
+            </div>
+          </div>
+          <div class="stat-card" style="flex-direction:row; align-items:center;">
+            <div class="avatar-circle" style="background:#fff7ed; color:#ea580c;"><span class="material-symbols-outlined">calendar_today</span></div>
+            <div>
+              <span class="text-label">Result Date</span>
+              <div class="page-title" style="font-size:18px;" id="statDate">&mdash;</div>
+            </div>
+          </div>
+          <div class="stat-card" style="flex-direction:row; align-items:center;">
+            <div class="avatar-circle" style="background:#f0fdf4; color:#16a34a;"><span class="material-symbols-outlined">military_tech</span></div>
+            <div>
+              <span class="text-label">Overall Grade</span>
+              <div class="page-title" style="color:#15803d;" id="statGrade">&mdash;</div>
+            </div>
+          </div>
+          <div class="stat-card" style="flex-direction:row; align-items:center;">
+            <div class="avatar-circle" style="background:#f0fdfa; color:#0d9488;"><span class="material-symbols-outlined">pie_chart</span></div>
+            <div>
+              <span class="text-label">Percentage</span>
+              <div class="page-title" id="statPercentage">&mdash;</div>
+            </div>
+          </div>
+        </div>
+
+        <section class="table-card" id="tableSection">
+          <div class="stack-row-between" style="margin-bottom:24px;">
+            <h2 class="section-title">Test Sessions</h2>
+            <div class="select-filter-wrap">
+              <select class="select-filter" id="sessionFilter"></select>
+              <span class="material-symbols-outlined control-chevron-right" style="font-size:18px;">expand_more</span>
+            </div>
+          </div>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead>
+                <tr><th>Subject</th><th>Obtained Marks</th><th>Total Marks</th><th>Percentage</th><th>Grade</th></tr>
+              </thead>
+              <tbody id="sessionBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="empty-state" id="emptyState" style="display:none;">No test sessions recorded yet.</div>
+      </main>
+
+      <footer class="table-card" style="border-radius:0; text-align:center; box-shadow:none; border-top:1px solid var(--color-line); margin-top:auto;">
+        <span class="text-label" style="text-transform:none; letter-spacing:normal;">&copy; 2026 Naeem Academy. All rights reserved.</span>
+      </footer>
+      <div class="mobile-nav-spacer"></div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/testsession.js"></script>
+</body>
+</html>
